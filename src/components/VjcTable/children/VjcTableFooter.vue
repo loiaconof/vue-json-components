@@ -1,12 +1,11 @@
 <template>
-    {{ useFilters }} - {{ useOrder }}
+    {{ usePagination }}
 </template>
 
 <script setup lang="ts">
 
 interface Props {
-    useFilters: boolean
-    useOrder: boolean
+    usePagination: boolean
 }
 defineProps<Props>()
 </script>

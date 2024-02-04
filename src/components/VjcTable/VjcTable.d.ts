@@ -1,34 +1,31 @@
-export interface VjcTable {
-    metadata: VjcTableMetadata,
-    head: VjcTableHead,
-    body: VjcTableBody,
-    pagination: VjcTablePagination,
-    footer: VjcTableFooter,
-}
-
 export interface VjcTableCeilCore {
     columnId: string,
 }
 
 export interface VjcTableHead {
-    header: VjcTableHeadHeader[],
-    filters: VjcTableHeadFilters[],
+    columns: VjcTableHeadColumn[]
 }
 
-export interface VjcTableHeadHeader extends VjcTableCeilCore {
+export interface VjcTableHeadColumn extends VjcTableCeilCore {
+    label: string
+    filter: VjcTableHeadColumnFilter
 }
 
-export interface VjcTableHeadFilters extends VjcTableCeilCore {
+export interface VjcTableHeadColumnFilter {
+    type: string
+    value: any
 }
 
-export interface VjcTableMetadata {
+export interface VjcTableRow {
+    utilities: VjcTableUtility[]
+    ceils: VjcTableCeil[]
 }
 
-export interface VjcTableBody {
+export interface VjcTableCeil extends VjcTableCeilCore {
+    type: string
+    label: string
 }
 
-export interface VjcTablePagination {
-}
-
-export interface VjcTableFooter {
+export interface VjcTableUtility {
+    type: string
 }
