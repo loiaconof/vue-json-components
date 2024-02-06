@@ -1,9 +1,9 @@
 <template>
-    <td v-for="ceil in rows.ceils">
-        <p v-if="ceil.type === 'text'">
+    <template v-for="ceil in rows.ceils">
+        <td v-if="ceil.type === 'text'">
             {{ ceil.label }}
-        </p>
-    </td>
+        </td>
+    </template>
 </template>
 
 <script setup lang="ts">

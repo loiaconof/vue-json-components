@@ -1,13 +1,18 @@
 <template>
-    <component
-        :is="rowDispatcher"
-        :rows="rows"
-    />
+    <tr
+        v-for="(row, index) in rows"
+        :key="index"
+    >
+        <component
+            :is="rowDispatcher"
+            :rows="row"
+        />
+    </tr>
 </template>
 
 <script setup lang="ts">
 import type { Component } from "vue"
-import { VjcTableRow } from "../VjcTable"
+import type { VjcTableRow } from "../VjcTable"
 
 interface Props {
     rowDispatcher: Component

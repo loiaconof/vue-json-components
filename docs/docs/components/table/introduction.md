@@ -34,26 +34,72 @@ const head = {
         },
     ]
 }
-const rows = {
-    /*utilities: [
+const rows = [
+    {
+        /*utilities: [
 
-    ],*/
-    ceils: [
-        {
-            columnId: '1',
-            label: 'r1 c1',
-            type: 'text',
-        },
-        {
-            columnId: '2',
-            label: 'r1 c2',
-            type: 'text',
-        },
-        {
-            columnId: '3',
-            label: 'r1 c3',
-            type: 'text',
-        },
-    ]
-}
+        ],*/
+        ceils: [
+            {
+                columnId: '1',
+                label: 'r1 c1',
+                type: 'text',
+            },
+            {
+                columnId: '2',
+                label: 'r1 c2',
+                type: 'text',
+            },
+            {
+                columnId: '3',
+                label: 'r1 c3',
+                type: 'text',
+            },
+        ]
+    },
+    {
+        /*utilities: [
+
+        ],*/
+        ceils: [
+            {
+                columnId: '1',
+                label: 'r2 c1',
+                type: 'text',
+            },
+            {
+                columnId: '2',
+                label: 'r2 c2',
+                type: 'text',
+            },
+            {
+                columnId: '3',
+                label: 'r2 c3',
+                type: 'text',
+            },
+        ]
+    },
+    {
+        /*utilities: [
+
+        ],*/
+        ceils: [
+            {
+                columnId: '1',
+                label: 'r3 c1',
+                type: 'text',
+            },
+            {
+                columnId: '2',
+                label: 'r3 c2',
+                type: 'text',
+            },
+            {
+                columnId: '3',
+                label: 'r3 c3',
+                type: 'text',
+            },
+        ]
+    },
+]
 </script>
