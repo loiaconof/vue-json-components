@@ -9,7 +9,7 @@
         />
         <component
             :is="bodyComponent"
-            :rowDispatcher="rowDispatcherComponent"
+            :cellDispatcher="cellDispatcherComponent"
             :rows="rows"
         />
         <component
@@ -23,7 +23,7 @@
 import VjcTableBody from './children/VjcTableBody.vue';
 import VjcTableFooter from './children/VjcTableFooter.vue'
 import VjcTableHeader from './children/VjcTableHeader.vue'
-import VjcTableRowDispatcher from './children/VjcTableRowDispatcher.vue';
+import VjcTableCellDispatcher from './children/VjcTableCellDispatcher.vue';
 import VjcTableFilterDispatcher from './children/VjcTableFilterDispatcher.vue';
 import type { Component } from 'vue';
 import type { VjcTableHead, VjcTableRow } from './VjcTable';
@@ -33,7 +33,7 @@ interface Props {
     bodyComponent: Component
     footerComponent: Component
     headerFilterComponent: Component
-    rowDispatcherComponent: Component
+    cellDispatcherComponent: Component
     head: VjcTableHead
     rows: VjcTableRow[]
     useOrder: boolean
@@ -47,7 +47,7 @@ withDefaults(defineProps<Props>(), {
     bodyComponent: VjcTableBody,
     footerComponent: VjcTableFooter,
     headerFilterComponent: VjcTableFilterDispatcher,
-    rowDispatcherComponent: VjcTableRowDispatcher,
+    cellDispatcherComponent: VjcTableCellDispatcher,
     useOrder: false,
     usePagination: false,
     useFilters: false,

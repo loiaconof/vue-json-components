@@ -1,4 +1,4 @@
-export interface VjcTableCeilCore {
+export interface VjcTableCellCore {
     columnId: string,
 }
 
@@ -6,7 +6,7 @@ export interface VjcTableHead {
     columns: VjcTableHeadColumn[]
 }
 
-export interface VjcTableHeadColumn extends VjcTableCeilCore {
+export interface VjcTableHeadColumn extends VjcTableCellCore {
     label: string
     filter: VjcTableHeadColumnFilter
 }
@@ -18,10 +18,10 @@ export interface VjcTableHeadColumnFilter {
 
 export interface VjcTableRow {
     utilities: VjcTableUtility[]
-    ceils: VjcTableCeil[]
+    cells: VjcTableCell[]
 }
 
-export interface VjcTableCeil extends VjcTableCeilCore {
+export interface VjcTableCell extends VjcTableCellCore {
     type: string
     label: string
 }

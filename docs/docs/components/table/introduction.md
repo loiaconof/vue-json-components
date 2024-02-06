@@ -39,7 +39,7 @@ const rows = [
         /*utilities: [
 
         ],*/
-        ceils: [
+        cells: [
             {
                 columnId: '1',
                 label: 'r1 c1',
@@ -61,17 +61,24 @@ const rows = [
         /*utilities: [
 
         ],*/
-        ceils: [
+        cells: [
             {
                 columnId: '1',
                 label: 'r2 c1',
                 type: 'text',
             },
-            {
-                columnId: '2',
-                label: 'r2 c2',
-                type: 'text',
-            },
+            [
+                {
+                    columnId: '2',
+                    label: 'r2 c2',
+                    type: 'text',
+                },
+                {
+                    columnId: '2',
+                    label: 'r2 c2',
+                    type: 'text',
+                },
+            ],
             {
                 columnId: '3',
                 label: 'r2 c3',
@@ -83,7 +90,7 @@ const rows = [
         /*utilities: [
 
         ],*/
-        ceils: [
+        cells: [
             {
                 columnId: '1',
                 label: 'r3 c1',
